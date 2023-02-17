@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Aref+Ruqaa+Ink:wght@700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Aref Ruqaa Ink', serif; 
+}
+body{
+    background: url('pic.jpeg') no-repeat center center fixed;
+    background-size: 100% 100%;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+}
+.container{
+    width: 100%;
+    max-width: 650px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 25px;
+    margin: 0 30px;
+    box-shadow: inset 5px 5px 5px white;
+    border-radius: 10px;
+}
+.form-title{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    border-bottom: 2px solid white;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+.user-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.input:nth-child(2n){
+    justify-content: end;
+}
+.input{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 15px;
+}
+.input label{
+    color: white;
+    width: 95%;
+    font-size: 20px;
+    margin: 5px 0;
+    font-weight: 500;
+}
+.input input{
+    height: 40px;
+    width: 95%;
+    border-radius: 5px;
+    padding: 0 10px;
+    outline: none;
+    border: 1px solid grey;
+}
+.formerror{
+    color: red;
+    text-shadow: 0.4px 0.4px white;
+}
+.gender-title{
+    color: white;
+    font-size: 24px;
+    font-weight: 400;
+    border-bottom: 1px solid white;
+}
+.gender-category{
+    color: white;
+    margin: 15px 0;
+}
+.gender-category label{
+    padding: 0 20px 0 5px;
+}
+.gender-category label,
+.gender-category input,
+.submit input{
+    cursor: pointer;
+}
+.submit{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.submit input{
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 20px;
+    background-color: rgb(14, 64, 107);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-shadow: 1px 1px 1px black;
+}
+.submit input:hover{
+    background-color: rgb(18, 79, 132);
+}
+
+@media only screen and (max-width: 600px) {
+    .container{
+        min-width: 280px;
+    }
+    .input{
+        margin-bottom: 12px;
+        width: 100%;
+    }
+    .input:nth-child(2n){
+        justify-content: space-between;
+    }
+    .gender-category{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .user-info{
+        max-height: 380px;
+        overflow: auto;
+    }
+    .user-info::-webkit-scrollbar{
+        width: 0;
+    }
+}

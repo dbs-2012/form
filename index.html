@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form action="#" name="myForm" onsubmit="return formValidate()">
+            <h1 class="form-title">Registeration</h1>
+            <div class="user-info">
+                <div class="input">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" name="fullName" id="fullName" placeholder="Enter Full Name" required />
+                    <span class="formerror" id="nameerror"></span>
+                </div>
+                <div class="input">
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email" placeholder="Enter Email" required />
+                    <span class="formerror" id="emailerror"></span>
+                </div>
+                <div class="input">
+                    <label for="phoneno">Phone Number</label>
+                    <input type="tel" name="phoneno" id="phoneno" placeholder="Enter Phone Number" required />
+                    <span class="formerror" id="noerror"></span>
+                </div>
+                <div class="input">
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" name="dob" id="dob" required />
+                    <span class="formerror" id="doberror"></span>
+                </div>
+                <div class="input">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" placeholder="Enter Password" required />
+                    <span class="formerror" id="passerror"></span>
+                </div>
+                <div class="input">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm Password" required />
+                    <span class="formerror" id="confirmerror"></span>
+                </div>
+            <div class="gender-details">
+                <span class="gender-title">Gender</span>
+                <div class="gender-category">
+                    <input type="radio" name="gender" id="male" required >
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="female">
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" id="other">
+                    <label for="female">Other</label>
+                </div>
+            </div>
+            </div>
+            <div class="submit">
+                <input type="submit" value="Register">
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
